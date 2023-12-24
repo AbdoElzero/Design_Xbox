@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box ;
+    -moz-box-sizing: border-box;
+}
+:root {
+    --background-main: rgba(255, 255, 255, 0.10);
+    --background-tow: #ee626b;
+    --background-three: #0071f8;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/banner-bg.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    font-family: sans-serif;
+}
+.page {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 554px;
+    padding: 20px 25px;
+}
+.page h1 {
+    margin-top: 0;
+    color: white;
+}
+.page p {
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 0;
+}
+.page #input {
+    width: 68%;
+    outline: none;
+    border: 1px solid #eee;
+    padding: 10px 16px;
+    border-radius: 20px;
+    margin-bottom: 22px;
+}
+.page #start {
+    padding: 10px 16px;
+    width: 15%;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    border: 1px solid var(--background-tow);
+    background-color: var(--background-tow);
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+
+}
+.page #reset {
+    padding: 10px 16px;
+    width: 15%;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    border: 1px solid var(--background-tow);
+    background-color: var(--background-tow);
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.page #start:hover,
+.page #reset:hover {
+    background-color: var(--background-three);
+    border: 1px solid var(--background-three);
+}
+.page #text {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #1b3358;
+    padding: 14px 50px;
+    line-height: 1.6;
+    border-radius: 30px;
+}
+.page a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--background-tow);
+    width: fit-content;
+    margin: auto;
+    padding: 10px 26px;
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+.page a:hover {
+    background-color: var(--background-three);
+}
